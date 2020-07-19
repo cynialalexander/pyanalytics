@@ -59,9 +59,11 @@ print(set2)
 #strings as text in string; imutable
 str1 = 'Python Programming'
 type(str1)
+len(str1)
 print(str1)
 str2="Yash"
 str2.lower()
+print(str2)
 dir(str)
 #%% - Sequence
 #sequence - tuple and list are used
