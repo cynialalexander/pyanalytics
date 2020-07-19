@@ -71,10 +71,12 @@ list1
 #for loop : indentations with colon : Run next 2 lines together
 for i in list1:
     print(i)
+    print(i)
   
+list3=(1,2,3)
 for i in list1:    print(i)
+for i in list3:    print('Dhiraj ', i + 6)
 for i in list1:    print('Dhiraj ', i + 6)
-
 tuple1
 list5 = ['a',1]
 list5
@@ -120,6 +122,8 @@ numpy.array([10,20])
 
 import numpy as np #np is alias
 np1 = np.arange(1,10)
+np1
+np2=np.arange(10,20)
 x=np.arange(start=1,stop=1000000,step=2)
 len(x)
 x[1:100]
@@ -128,6 +132,7 @@ np
 np.mean(np.arange(1,10000000))
 np1
 type(np1)
+type(np2)
 np?
 #help on numpy 
 dir(np)  #functions available in numpy
@@ -139,6 +144,7 @@ dir(np)
 np3 = np.array([[1,4],[3,1],[5,6],[10,50]])
 np3
 np3.shape
+x.shape
 #http://cs231n.github.io/python-numpy-tutorial/
 #%%
 #pandas - dataframe, excel like
@@ -214,7 +220,7 @@ data2b
 #csv in any other location - full path
 data2b
 data2a.head()
-
+gg
 data2c = pd.read_excel('mtcarsExcel.xlsx',header=0)
 #header=None
 data2c.head()
