@@ -27,5 +27,4 @@ datadenco.groupby('partnum')['margin'].sum() #Sum/ Group the revenue by part no
 datadenco.groupby('partnum')['margin'].sum().sort_values(ascending=False) #Sort the revenue by decreasing order
 datadenco.groupby('partnum')['margin'].sum().nlargest(10) #Top revenue by part nos
 #%%
-
-                                                     
+datadenco.groupby('partnum')['margin'].sum().sort_values(ascending=False)

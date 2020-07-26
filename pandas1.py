@@ -1,13 +1,13 @@
 #Topic:Pandas DF
 #-----------------------------
 #libraries
-import numpy as np
+import numpy as np #import numpy library(Used for numerical cumputation)
 import pandas as pd
 #pandas DF are combination of panda Series..
 #one column data is a Series of one datatype, DF can have multiple data types
-
-from pydataset import data
-mtcars = data('mtcars')
+pip install pydataset #install the lib if it dosent exist
+from pydataset import data #import module data from pydataset
+mtcars = data('mtcars') 
 mtcarsDF = mtcars
 
 mtcarsDF

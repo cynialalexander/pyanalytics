@@ -73,7 +73,7 @@ y_pred
 y_pred2 = model.intercept_ + np.sum(model.coef_ * x, axis=1)
 y_pred2
 y_pred - y_pred2
-
+y - y_pred
 #new data
 x_new = np.arange(10). reshape((-1,2))
 x_new
@@ -115,3 +115,4 @@ import RegscorePy
 #aic(y, y_pred, p)
 RegscorePy.aic.aic(y=y, y_pred= results.predict(x), p=1)
 RegscorePy.bic.bic(y=y, y_pred= results.predict(x), p=1)
+  

@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from pydataset import data
 mtcars = data('mtcars')
 data=mtcars
+data
 data.head()
 data.columns
 data.dtypes
@@ -63,6 +64,7 @@ from statsmodels.formula.api import ols
 from pydataset import data
 mtcars = data('mtcars')
 df1 = mtcars[['mpg','wt','hp']]
+df1.shape
 MTmodel1 = ols("mpg ~ wt + hp", data=df1).fit()
 print(MTmodel1.summary())
 predictionM1 = MTmodel1.predict()
