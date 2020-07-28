@@ -1,6 +1,6 @@
 #Topic: DT - Diabetis Data Set
 #-----------------------------
-#pip install graphviz  #install whichever library is not present
+#pip install graphviz
 #pip install pydotplus
 
 # Load libraries
@@ -71,7 +71,7 @@ from sklearn import tree
 from IPython.display import SVG
 #libraries & path of graphviz
 import os
-os.environ["PATH"] += os.pathsep + 'c:/Program Files (x86)/Graphviz2.38/bin/'
+os.environ["PATH"] += os.pathsep + r'C:\Program Files\Graphviz 2.45.20200725.2037\bin'
 #%%
 graph1 = Source(tree.export_graphviz(clf, out_file=None, class_names= ['0', '1']  , filled = True))
 display(SVG(graph1.pipe(format='svg')))
