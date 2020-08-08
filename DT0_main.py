@@ -11,7 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 import os
-os.listdir('E:/analytics/projects/pyanalytics/data') #change the folder to see what are the file in folder
+os.listdir('C:/analytics/projects/pyanalytics') #change the folder to see what are the file in folder
 #dataset
 #data = pd.read_csv('E:/analytics/projects/pyanalytics/data/bill_authentication.csv')
 data = pd.read_csv('https://raw.githubusercontent.com/DUanalytics/pyAnalytics/master/data/bill_authentication.csv')
@@ -58,6 +58,11 @@ tree.plot_tree(decision_tree=clsModel)
 tree.plot_tree(decision_tree=clsModel, feature_names=['Var', 'Skew', ' Kur',  'Ent'], class_names=['Org','Fake'], fontsize=12)
 #not a good way to draw graphs.. other methods to be experimented
 tree.plot_tree(decision_tree=clsModel, max_depth=2, feature_names=['Var', 'Skew', ' Kur',  'Ent'], class_names=['Org','Fake'], fontsize=12)
+
+pip install graphviz
+dot -V
+import os
+os.environ["PATH"] += os.pathsep + r'C:\Users\Alex\anaconda3\Lib\site-packages\graphviz\bin'
 
 Source(tree.export_graphviz(clsModel))
 Source(tree.export_graphviz(clsModel, max_depth=3))

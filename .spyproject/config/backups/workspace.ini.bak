@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = ['file1.py', '..\\duAnalytics\\01C-IIM\\LM4_fin.py', 'DT2_diabetis.py', '..\\duAnalytics\\01C-IIM\\PLT3_bar.py', '..\\duAnalytics\\01C-IIM\\LGM1_simple1.py']
+recent_files = ['file1.py', 'LRassignment.py', 'linearRegression-Flow.py', 'LM_mtcars.py']
 
